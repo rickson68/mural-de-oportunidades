@@ -1,0 +1,86 @@
+[
+  {
+    "id": "palestra-carreiras",
+    "titulo": "Carreiras em Engenharia de Computação",
+    "tipo": "palestra",
+    "data": "2026-11-03",
+    "horarioInicio": "18:30",
+    "horarioFim": "20:00",
+    "local": "Auditório Central",
+    "instituicao": "UFC Sobral",
+    "descricao": "Conversa com egressos sobre trajetórias profissionais em hardware, software e pesquisa.",
+    "linksExternos": ["https://www.ufc.br/"]
+  },
+  {
+    "id": "workshop-git",
+    "titulo": "Git colaborativo na prática",
+    "tipo": "workshop",
+    "data": "2026-11-12",
+    "horarioInicio": "14:00",
+    "horarioFim": "16:00",
+    "local": "Laboratório 03",
+    "instituicao": "PET Computação",
+    "descricao": "Fluxos com branches, revisão de código e resolução de conflitos em projetos de equipe.",
+    "linksExternos": ["https://petcomp.ufc.br/"]
+  },
+  {
+    "id": "palestra-ia-responsavel",
+    "titulo": "Inteligência artificial responsável",
+    "tipo": "palestra",
+    "data": "2026-11-12",
+    "horarioInicio": "18:30",
+    "horarioFim": "20:00",
+    "local": "Remoto",
+    "instituicao": "GIAIS",
+    "descricao": "Debate sobre vieses, privacidade e avaliação de sistemas de inteligência artificial.",
+    "linksExternos": ["https://www.ufc.br/"]
+  },
+  {
+    "id": "minicurso-python",
+    "titulo": "Python para análise de dados",
+    "tipo": "minicurso",
+    "data": "2026-11-17",
+    "horarioInicio": "13:30",
+    "horarioFim": "17:30",
+    "local": "Laboratório 02",
+    "instituicao": "Centro Acadêmico",
+    "descricao": "Introdução prática a Pandas e visualização de dados com exercícios guiados.",
+    "linksExternos": ["https://www.ufc.br/"]
+  },
+  {
+    "id": "visita-laboratorios",
+    "titulo": "Circuito de visita aos laboratórios",
+    "tipo": "outro",
+    "data": "2026-11-20",
+    "horarioInicio": "09:00",
+    "horarioFim": "11:30",
+    "local": "Bloco de Engenharia",
+    "instituicao": "Coordenação do Curso",
+    "descricao": "Visita guiada aos laboratórios de redes, eletrônica e sistemas embarcados.",
+    "linksExternos": ["https://www.ufc.br/"]
+  },
+  {
+    "id": "workshop-curriculo",
+    "titulo": "Currículo e portfólio para tecnologia",
+    "tipo": "workshop",
+    "data": "2026-11-24",
+    "horarioInicio": "16:00",
+    "horarioFim": "18:00",
+    "local": "Remoto",
+    "instituicao": "Núcleo de Estágios",
+    "descricao": "Orientações práticas para apresentar projetos, experiências e competências técnicas.",
+    "linksExternos": ["https://www.linkedin.com/"]
+  },
+  {
+    "id": "mostra-projetos",
+    "titulo": "Mostra de Projetos Integradores",
+    "tipo": "outro",
+    "data": "2026-11-28",
+    "horarioInicio": "08:30",
+    "horarioFim": "12:00",
+    "local": "Pátio do Bloco I",
+    "instituicao": "UFC Sobral",
+    "descricao": "Exposição aberta de protótipos e soluções desenvolvidas pelos estudantes do curso.",
+    "linksExternos": ["https://www.ufc.br/"]
+  }
+]
