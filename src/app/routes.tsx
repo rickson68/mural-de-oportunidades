@@ -3,7 +3,7 @@ import { Calendar } from "./pages/Calendar";
 import { Home } from "./pages/Home";
 import { Quiz } from "./pages/Quiz";
 import { OpportunityDetails } from "./pages/OpportunityDetails";
-import { Layout } from "./components";
+import { Layout } from "./components/page_layout";
 
 export const router = createHashRouter([
   {
