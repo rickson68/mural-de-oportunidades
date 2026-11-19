@@ -1,0 +1,38 @@
+import { Link } from "react-router";
+import { ArrowRight } from "lucide-react";
+
+export default function AccessCard({
+  to,
+  icon,
+  title,
+  description,
+}: {
+  to: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <Link
+      to={to}
+      className="group flex items-center gap-4 rounded-2xl border border-blue-100 bg-blue-50/60 p-4 transition hover:border-blue-200 hover:bg-blue-50"
+    >
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-blue-600 shadow-sm">
+        {icon}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-sm font-semibold text-gray-950">
+          {title}
+        </span>
+        <span className="mt-0.5 block text-xs text-gray-500">
+          {description}
+        </span>
+      </span>
+      <ArrowRight
+        className="text-blue-500 transition group-hover:translate-x-0.5"
+        size={18}
+        aria-hidden="true"
+      />
+    </Link>
+  );
+}

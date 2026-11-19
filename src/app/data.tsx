@@ -63,4 +63,5 @@ export function DataProvider({ children }: { children: ReactNode }) {
 export function useData() {
   const data = useContext(DataContext);
   if (!data) throw new Error("UseData deve estar dentro do DataProvider.");
+  return data;
 }
