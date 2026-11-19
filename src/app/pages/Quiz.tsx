@@ -69,7 +69,7 @@ export function Quiz() {
 
   const currentField = FIELDS[step];
   const options = getValues(openOpportunities, currentField);
-
+  /*
   const results = useMemo(() => {
     return openOpportunities
       .map((opportunity) => {
@@ -96,7 +96,7 @@ export function Quiz() {
           a.opportunity.dataLimite.localeCompare(b.opportunity.dataLimite),
       );
   }, [answers, openOpportunities]);
-
+*/
   const handleSelect = (value: string) => {
     setAnswers((prev) => {
       if (currentField !== "habilidades" || value === "indiferente") {
