@@ -63,24 +63,24 @@ export function Home() {
 
   return (
     <>
-      <section className="border-b border-gray-200 bg-white">
+      <section className="border-b border-ink-200 bg-surface">
         <div className="mx-auto max-w-6xl px-4 py-9 sm:px-6 sm:py-12">
           <div className="mb-8 max-w-3xl">
             <div className="mb-4 flex flex-wrap gap-2">
-              <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+              <span className="rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700">
                 UFC Sobral
               </span>
               {!loading && open.some((item) => isUrgent(item.dataLimite)) && (
-                <span className="rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-600">
+                <span className="rounded-full bg-danger-50 px-3 py-1 text-xs font-semibold text-danger-600">
                   {open.filter((item) => isUrgent(item.dataLimite)).length} com
                   prazo próximo
                 </span>
               )}
             </div>
-            <h1 className="text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">
               Encontre sua próxima oportunidade
             </h1>
-            <p className="mt-3 max-w-2xl text-base leading-7 text-gray-500">
+            <p className="mt-3 max-w-2xl text-base leading-7 text-ink-500">
               Bolsas, estágios, monitorias e projetos selecionados para
               estudantes de Engenharia de Computação.
             </p>
@@ -121,10 +121,10 @@ export function Home() {
         ) : filtered.length ? (
           <>
             <div className="mb-5 flex items-baseline justify-between">
-              <h2 className="text-lg font-semibold text-gray-950">
+              <h2 className="text-lg font-semibold text-ink-950">
                 Oportunidades em aberto
               </h2>
-              <span className="text-sm text-gray-400">
+              <span className="text-sm text-ink-400">
                 {filtered.length} resultados
               </span>
             </div>
@@ -135,16 +135,16 @@ export function Home() {
             </div>
           </>
         ) : (
-          <div className="rounded-2xl border border-gray-200 bg-white p-10 text-center">
-            <h2 className="text-lg font-semibold text-gray-950">
+          <div className="rounded-2xl border border-ink-200 bg-surface p-10 text-center">
+            <h2 className="text-lg font-semibold text-ink-950">
               Nenhuma oportunidade encontrada
             </h2>
-            <p className="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-ink-500">
               Tente alterar os termos ou remover alguns filtros.
             </p>
             <button
               onClick={clear}
-              className="mt-5 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
+              className="mt-5 rounded-lg bg-primary-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-primary-700"
             >
               Limpar filtros
             </button>

@@ -141,31 +141,31 @@ export function Quiz() {
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12">
       <Link
         to="/"
-        className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-blue-600"
+        className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-primary-600"
       >
         <ArrowLeft size={17} aria-hidden="true" /> Voltar ao mural
       </Link>
 
-      <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-8">
+      <div className="rounded-2xl border border-ink-200 bg-surface p-5 shadow-sm sm:p-8">
         <div className="mb-8">
-          <div className="mb-3 flex items-center justify-between text-xs font-semibold text-gray-400">
+          <div className="mb-3 flex items-center justify-between text-xs font-semibold text-ink-400">
             <span>QUIZ DE RECOMENDAÇÃO</span>
             <span>
               {step + 1} de {FIELDS.length}
             </span>
           </div>
-          <div className="h-2 overflow-hidden rounded-full bg-gray-100">
+          <div className="h-2 overflow-hidden rounded-full bg-ink-100">
             <div
-              className="h-full rounded-full bg-blue-600 transition-all"
+              className="h-full rounded-full bg-primary-600 transition-all"
               style={{ width: `${((step + 1) / FIELDS.length) * 100}%` }}
             />
           </div>
         </div>
 
-        <h1 className="text-2xl font-bold text-gray-950">
+        <h1 className="text-2xl font-bold text-ink-950">
           {LABELS[currentField].title}
         </h1>
-        <p className="mt-2 text-sm leading-6 text-gray-500">
+        <p className="mt-2 text-sm leading-6 text-ink-500">
           {LABELS[currentField].subtitle}
         </p>
 
@@ -179,16 +179,16 @@ export function Quiz() {
                 aria-pressed={isActive}
                 className={`flex items-center justify-between rounded-xl border px-4 py-3.5 text-left text-sm font-medium transition ${
                   isActive
-                    ? "border-blue-500 bg-blue-50 text-blue-700"
-                    : "border-gray-200 bg-white text-gray-700 hover:border-blue-200 hover:bg-blue-50/40"
+                    ? "border-primary-500 bg-primary-50 text-primary-700"
+                    : "border-ink-200 bg-surface text-ink-700 hover:border-primary-200 hover:bg-primary-50/40"
                 }`}
               >
                 {titleCase(option)}
                 <span
                   className={`flex size-5 items-center justify-center rounded-full border ${
                     isActive
-                      ? "border-blue-600 bg-blue-600 text-white"
-                      : "border-gray-300"
+                      ? "border-primary-600 bg-primary-600 text-white"
+                      : "border-ink-300"
                   }`}
                 >
                   {isActive && <Check size={13} aria-hidden="true" />}
@@ -198,11 +198,11 @@ export function Quiz() {
           })}
         </div>
 
-        <div className="mt-8 flex items-center justify-between border-t border-gray-100 pt-5">
+        <div className="mt-8 flex items-center justify-between border-t border-ink-100 pt-5">
           <button
             onClick={() => setStep((prev) => Math.max(0, prev - 1))}
             disabled={step === 0}
-            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold text-gray-500 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-30"
+            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold text-ink-500 hover:bg-ink-50 disabled:cursor-not-allowed disabled:opacity-30"
           >
             <ChevronLeft size={17} aria-hidden="true" /> Voltar
           </button>
@@ -216,14 +216,14 @@ export function Quiz() {
               }
             }}
             disabled={answers[currentField].length === 0}
-            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-gray-300"
+            className="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-700 disabled:cursor-not-allowed disabled:bg-ink-300"
           >
             {step === FIELDS.length - 1 ? "Enviar respostas" : "Continuar"}
           </button>
         </div>
       </div>
 
-      <p className="mt-4 text-center text-xs text-gray-400">
+      <p className="mt-4 text-center text-xs text-ink-400">
         Suas respostas ficam apenas neste navegador.
       </p>
     </div>

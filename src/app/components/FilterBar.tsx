@@ -21,7 +21,7 @@ type FilterBarProps = {
 };
 
 const selectClass =
-  "rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-700";
+  "rounded-lg border border-ink-200 bg-surface px-3 py-2 text-sm text-ink-700";
 
 export function FilterBar({
   filters,
@@ -34,11 +34,11 @@ export function FilterBar({
     search || type || institution || modality || sort === "far";
 
   return (
-    <section className="border-b border-gray-200 bg-white">
+    <section className="border-b border-ink-200 bg-surface">
       <div className="mx-auto max-w-6xl px-4 py-5 sm:px-6">
         <div className="relative mb-3">
           <Search
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-ink-400"
             size={18}
             aria-hidden="true"
           />
@@ -50,14 +50,14 @@ export function FilterBar({
             value={search}
             onChange={(e) => onChange({ search: e.target.value })}
             placeholder="Buscar oportunidade pelo título..."
-            className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-11 pr-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white"
+            className="w-full rounded-xl border border-ink-200 bg-ink-50 py-3 pl-11 pr-4 text-sm outline-none transition focus:border-primary-500 focus:bg-surface"
           />
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
           <SlidersHorizontal
             size={17}
-            className="mr-1 text-gray-400"
+            className="mr-1 text-ink-400"
             aria-hidden="true"
           />
 
@@ -116,7 +116,7 @@ export function FilterBar({
           {hasFilters && (
             <button
               onClick={onClear}
-              className="px-3 py-2 text-sm font-medium text-blue-600 hover:text-blue-800"
+              className="px-3 py-2 text-sm font-medium text-primary-600 hover:text-primary-800"
             >
               Limpar filtros
             </button>

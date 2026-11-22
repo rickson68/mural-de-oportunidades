@@ -7,25 +7,25 @@ export default function DeadlinePanel({ value }: { value: string }) {
   return (
     <div
       className={`rounded-2xl border p-5 ${
-        urgent ? "border-red-200 bg-red-50" : "border-gray-200 bg-white"
+        urgent ? "border-danger-200 bg-danger-50" : "border-ink-200 bg-surface"
       }`}
     >
       <p
         className={`mb-2 text-xs font-bold uppercase tracking-wider ${
-          urgent ? "text-red-500" : "text-gray-400"
+          urgent ? "text-danger-500" : "text-ink-400"
         }`}
       >
         Data limite
       </p>
       <p
         className={`text-lg font-bold ${
-          urgent ? "text-red-700" : "text-gray-950"
+          urgent ? "text-danger-700" : "text-ink-950"
         }`}
       >
         {formatDate(value, { day: "2-digit", month: "long", year: "numeric" })}
       </p>
       {urgent && (
-        <p className="mt-1 flex items-center gap-1.5 text-xs font-medium text-red-600">
+        <p className="mt-1 flex items-center gap-1.5 text-xs font-medium text-danger-600">
           <Clock3 size={14} aria-hidden="true" />
           {days === 0
             ? "Encerra hoje"
