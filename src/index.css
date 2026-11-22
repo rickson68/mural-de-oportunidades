@@ -1,28 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+/*65FFD4*/
 @theme {
-  /* Marca / ações principais: botões, links, destaques (antes: azul) */
-  --color-primary-50: oklch(97% 0.014 254.604);
-  --color-primary-100: oklch(93.2% 0.032 255.585);
-  --color-primary-200: oklch(88.2% 0.059 254.128);
-  --color-primary-500: oklch(62.3% 0.214 259.815);
-  --color-primary-600: oklch(54.6% 0.245 262.881);
-  --color-primary-700: oklch(48.8% 0.243 264.376);
-  --color-primary-800: oklch(42.4% 0.199 265.638);
+  --color-brand: #65ffd4;
 
-  /* Texto, bordas e fundos neutros (antes: cinza) */
-  --color-ink-50: oklch(98.5% 0.002 247.839);
-  --color-ink-100: oklch(96.7% 0.003 264.542);
-  --color-ink-200: oklch(92.8% 0.006 264.531);
-  --color-ink-300: oklch(87.2% 0.01 258.338);
-  --color-ink-400: oklch(70.7% 0.022 261.325);
-  --color-ink-500: oklch(55.1% 0.027 264.364);
-  --color-ink-600: oklch(44.6% 0.03 256.802);
-  --color-ink-700: oklch(37.3% 0.034 259.733);
-  --color-ink-800: oklch(27.8% 0.033 256.848);
-  --color-ink-900: oklch(21% 0.034 264.665);
-  --color-ink-950: oklch(13% 0.028 261.692);
+  --color-primary-50: #e4fef4;
+  --color-primary-100: #c5fbe8;
+  --color-primary-200: #8ef8d6;
+  --color-primary-500: #00ba93;
+  --color-primary-600: #008366;
+  --color-primary-700: #006852;
+  --color-primary-800: #085442;
+
+  --color-ink-50: #f6fbf9;
+  --color-ink-100: #f0f5f3;
+  --color-ink-200: #dfe9e5;
+  --color-ink-300: #cdd7d3;
+  --color-ink-400: #9aa4a0;
+  --color-ink-500: #6b7471;
+  --color-ink-600: #4e5653;
+  --color-ink-700: #3a423f;
+  --color-ink-800: #232b28;
+  --color-ink-900: #131a18;
+  --color-ink-950: #050b08;
+
+  --color-success-50: #ebfdeb;
+  --color-success-700: #2f6d34;
 
   /* Alertas, prazos urgentes e erros (antes: vermelho) */
   --color-danger-50: oklch(97.1% 0.013 17.38);
