@@ -52,7 +52,10 @@ export function Layout() {
             {aluno && (
               <div className="ml-2 flex items-center gap-2 border-l border-ink-200 pl-3">
                 <span className="hidden text-sm font-medium text-ink-700 sm:block">
-                  Olá, {primeiroNome}
+                  Olá,{" "}
+                  <NavLink to="/profile" className="text-primary-700 underline">
+                    {primeiroNome}
+                  </NavLink>
                 </span>
                 <button
                   type="button"

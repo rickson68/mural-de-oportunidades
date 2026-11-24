@@ -5,6 +5,7 @@ import { Quiz } from "./pages/Quiz";
 import { OpportunityDetails } from "./pages/OpportunityDetails";
 import { Layout } from "./components/PageLayout";
 import { Login } from "./pages/Login";
+import { Profile } from "./pages/Profile";
 
 export const router = createHashRouter([
   {
@@ -15,6 +16,7 @@ export const router = createHashRouter([
       { path: "calendario", Component: Calendar },
       { path: "quiz", Component: Quiz },
       { path: "login", Component: Login },
+      { path: "profile", Component: Profile },
       { path: "*", Component: Home },
     ],
   },
