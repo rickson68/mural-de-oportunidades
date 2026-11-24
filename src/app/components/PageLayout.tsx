@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet } from "react-router";
 import { Handshake } from "lucide-react";
 import { LogOut } from "lucide-react";
 import { useAluno } from "./useAluno";
+import { useNavigate } from "react-router";
 
 const navClass = ({ isActive }: { isActive: boolean }) =>
   `rounded-lg px-3 py-2 text-sm font-medium transition ${
@@ -14,6 +15,7 @@ export function Layout() {
   const { aluno, logout } = useAluno();
   const primeiroNome = aluno?.split(" ")[0];
 
+  const navigate = useNavigate();
   return (
     <div className="flex min-h-screen flex-col bg-ink-50 text-ink-800">
       <header className="border-b border-ink-200 bg-surface">
@@ -59,7 +61,10 @@ export function Layout() {
                 </span>
                 <button
                   type="button"
-                  onClick={logout}
+                  onClick={() => {
+                    logout();
+                    navigate("/");
+                  }}
                   aria-label="Sair"
                   title="Sair"
                   className="rounded-lg p-2 text-ink-400 transition hover:bg-ink-50 hover:text-ink-900"

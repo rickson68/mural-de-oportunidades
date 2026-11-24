@@ -13,7 +13,9 @@ export function QuizWizard({ quiz }: { quiz: QuizState }) {
       <div className="mb-8">
         <div className="mb-3 flex items-center justify-between text-xs font-semibold text-ink-400">
           <span>QUIZ DE RECOMENDAÇÃO</span>
-          <span>{step + 1} de {fields.length}</span>
+          <span>
+            {step + 1} de {fields.length}
+          </span>
         </div>
         <div className="h-2 overflow-hidden rounded-full bg-ink-100">
           <div
@@ -24,7 +26,9 @@ export function QuizWizard({ quiz }: { quiz: QuizState }) {
       </div>
 
       <h2 className="text-2xl font-bold text-ink-950">{labels[field].title}</h2>
-      <p className="mt-2 text-sm leading-6 text-ink-500">{labels[field].subtitle}</p>
+      <p className="mt-2 text-sm leading-6 text-ink-500">
+        {labels[field].subtitle}
+      </p>
 
       <div className="mt-7 grid gap-2 sm:grid-cols-2">
         {["indiferente", ...optionsByField[field]].map((option) => {
@@ -44,7 +48,9 @@ export function QuizWizard({ quiz }: { quiz: QuizState }) {
               {titleCase(option)}
               <span
                 className={`flex size-5 items-center justify-center rounded-full border ${
-                  active ? "border-primary-600 bg-primary-600 text-on-color" : "border-ink-300"
+                  active
+                    ? "border-primary-600 bg-primary-600 text-on-color"
+                    : "border-ink-300"
                 }`}
               >
                 {active && <Check size={13} aria-hidden="true" />}
@@ -69,7 +75,7 @@ export function QuizWizard({ quiz }: { quiz: QuizState }) {
           disabled={answers[field].length === 0}
           className="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-on-color hover:bg-primary-700 disabled:cursor-not-allowed disabled:bg-ink-300"
         >
-          {isLast ? "Enviar respostas" : "Continuar"}
+          {isLast ? "Concluir" : "Continuar"}
         </button>
       </div>
     </div>

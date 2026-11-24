@@ -3,6 +3,7 @@ import {
   Search,
   SlidersHorizontal,
   Sparkles,
+  UserRoundKey,
 } from "lucide-react";
 import AccessCard from "../components/AccessCard";
 import ErrorState from "../components/ErrorState";
@@ -78,7 +79,7 @@ export function Home() {
               )}
             </div>
             <h1 className="text-3xl font-bold tracking-tight text-ink-950 sm:text-4xl">
-              Encontre sua próxima oportunidade
+              Ache a oportunidade certa para o seu perfil
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-7 text-ink-500">
               Bolsas, estágios, monitorias e projetos selecionados para
@@ -97,6 +98,12 @@ export function Home() {
               icon={<CalendarDays size={20} aria-hidden="true" />}
               title="Ver calendário de eventos"
               description="Palestras, minicursos e workshops do campus"
+            />
+            <AccessCard
+              to="/login"
+              icon={<UserRoundKey size={20} aria-hidden="true" />}
+              title="Faça login com seu E-mail Institucional."
+              description="Entre, personalize seus interesses e fique por dentro de novas oportunidades."
             />
           </div>
         </div>
