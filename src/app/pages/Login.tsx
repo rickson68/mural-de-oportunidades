@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router";
+import { useAluno } from "../components/useAluno";
 
 const inputClass =
   "w-full rounded-lg border border-ink-300 bg-surface px-3.5 py-2.5 text-sm text-ink-800 " +
@@ -15,8 +16,11 @@ export function Login() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
   };
+
+  const { login } = useAluno();
+
   const handleGoogleLogin = () => {
-    localStorage.setItem("aluno", "Pedro Rickson");
+    login("Pedro Rickson");
     navigate("/");
   };
 
