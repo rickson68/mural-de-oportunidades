@@ -1,5 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router";
-import { BookOpen } from "lucide-react";
+import { Handshake } from "lucide-react";
 
 const navClass = ({ isActive }: { isActive: boolean }) =>
   `rounded-lg px-3 py-2 text-sm font-medium transition ${
@@ -15,7 +15,11 @@ export function Layout() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <Link to="/" className="flex items-center gap-3 rounded-lg">
             <span className="flex size-9 items-center justify-center rounded-xl bg-primary-600 text-white shadow-sm">
-              <BookOpen size={19} aria-hidden="true" />
+              <Handshake
+                size={19}
+                aria-hidden="true"
+                className="text-ink-1000"
+              />
             </span>
             <span>
               <span className="block text-sm font-bold text-ink-950 sm:text-base">
